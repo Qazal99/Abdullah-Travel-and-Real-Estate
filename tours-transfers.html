@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة، استقبال المطار، التأشيرات والترجمة | عبدالله للسفريات والعقارات</title>
+    <meta name="description" content="الاستقبال من مطار عنتيبي بسيارات ألفارد ونواه، جولات سياحية في أوغندا، تخليص التأشيرات، والترجمة بين العربية والصومالية والإنجليزية.">
+
+    <!-- Bootstrap 5 RTL CSS by default -->
+    <link id="bootstrap-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="bi bi-geo-alt-fill text-gold me-1"></i>
+                <span data-i18n="top_location">كمبالا وعنتيبي، أوغندا</span>
+                <span class="mx-3">|</span>
+                <i class="bi bi-clock-fill text-gold me-1"></i>
+                <span data-i18n="top_hours">مكتب وساطة عبر واتساب على مدار الساعة</span>
+            </div>
+            <div>
+                <a href="https://wa.me/256740048986" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none fw-semibold wa-general-link" dir="ltr">
+                    <i class="bi bi-whatsapp text-success me-1"></i> +256 740 048 986
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="image/logo.png" alt="Abdullah Travel and Real Estate Logo" onerror="this.style.display='none'">
+                <span class="text-emerald fs-5" data-i18n="brand_name">عبدالله للسفريات والعقارات</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="real-estate.html" data-i18n="nav_real_estate">العقارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tours-transfers.html" data-i18n="nav_tours">السياحة والمطار والخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-2">
+                    <button id="langToggleBtn" class="lang-toggle-btn" type="button" data-i18n="lang_btn">English</button>
+                    <a href="https://wa.me/256740048986" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm px-3 py-2 wa-general-link" dir="ltr">
+                        <i class="bi bi-whatsapp me-1"></i> +256 740 048 986
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2" data-i18n="tt_page_title">السياحة، استقبال المطار، التأشيرات والترجمة</h1>
+            <p class="lead text-white-50 mb-0" data-i18n="tt_page_desc">توصيل موثوق بسيارات ألفارد ونواه من مطار عنتيبي، جولات سياحية، تخليص تأشيرات، وترجمة معتمدة في أوغندا.</p>
+        </div>
+    </header>
+
+    <!-- Entebbe Airport Pickup Booking Section (Alphard / Noah Van Image, No Prices) -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <span class="section-subtitle" data-i18n="pickup_box_sub">حجز فوري لتوصيل المطار</span>
+                    <h2 class="fw-bold text-emerald mb-3" data-i18n="pickup_box_title">الاستقبال والتوصيل من مطار عنتيبي (EBB)</h2>
+                    <p class="text-muted mb-4" data-i18n="pickup_box_desc">أدخل تفاصيل رحلتك وأرسل طلب الاستقبال مباشرة إلى فريقنا عبر واتساب.</p>
+                    <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=900&q=80" alt="Entebbe Airport Alphard Noah Private Van" class="img-fluid rounded-4 shadow-sm">
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="custom-card p-4 p-md-5 border">
+                        <form id="airportPickupForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="passengerName" class="form-label fw-semibold" data-i18n="lbl_passenger_name">الاسم الكامل للمسافر</label>
+                                    <input type="text" class="form-control" id="passengerName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="passengerCount" class="form-label fw-semibold" data-i18n="lbl_passengers">عدد الركاب</label>
+                                    <input type="number" class="form-control" id="passengerCount" min="1" max="20" value="1" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="pickupRoute" class="form-label fw-semibold" data-i18n="lbl_pickup_type">مسار التوصيل / نوع السيارة</label>
+                                    <select class="form-select" id="pickupRoute">
+                                        <option value="ebb_kla" data-i18n="opt_ebb_kla">مطار عنتيبي (EBB) ← مدينة كمبالا (سيارة ألفارد / نواه)</option>
+                                        <option value="kla_ebb" data-i18n="opt_kla_ebb">مدينة كمبالا ← مطار عنتيبي (EBB) (سيارة ألفارد / نواه)</option>
+                                        <option value="ebb_jinja" data-i18n="opt_ebb_jinja">مطار عنتيبي (EBB) ← جينجا</option>
+                                        <option value="vip_suv" data-i18n="opt_vip_suv">استئجار سيارة عائلية خاصة (ألفارد / نواه / دفع رباعي) ليوم كامل</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="arrivalDate" class="form-label fw-semibold" data-i18n="lbl_arrival_date">تاريخ الوصول / الاستقبال</label>
+                                    <input type="date" class="form-control" id="arrivalDate" required>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <button type="submit" class="btn btn-whatsapp btn-lg w-100">
+                                        <i class="bi bi-whatsapp me-2"></i><span data-i18n="btn_send_pickup_wa">إرسال طلب الاستقبال عبر واتساب</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Processing & Translation Services Section -->
+    <section class="py-5 border-top border-bottom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle" data-i18n="extra_srv_sub">خدمات مساندة في أوغندا</span>
+                <h2 class="fw-bold text-emerald" data-i18n="extra_srv_title">تخليص التأشيرات والترجمة الفورية والتحريرية</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Visa Processing -->
+                <div class="col-md-6">
+                    <div class="custom-card p-4 p-md-5 d-flex flex-column">
+                        <div class="service-icon-box">
+                            <i class="bi bi-passport"></i>
+                        </div>
+                        <h4 class="text-emerald mb-3" data-i18n="visa_card_title">تخليص معاملات التأشيرات (الفيزا) في أوغندا</h4>
+                        <p class="text-muted mb-4" data-i18n="visa_card_desc">
+                            نساعدك في التقديم والمتابعة للحصول على تأشيرة أوغندا السياحية، تأشيرة شرق أفريقيا، تصاريح العمل، وتمديد الإقامة بكل سهولة.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="visa_card_title">
+                                <i class="bi bi-whatsapp me-2"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Translation Services (Arabic, Somali, English) -->
+                <div class="col-md-6">
+                    <div class="custom-card p-4 p-md-5 d-flex flex-column">
+                        <div class="service-icon-box">
+                            <i class="bi bi-translate"></i>
+                        </div>
+                        <h4 class="text-emerald mb-3" data-i18n="trans_card_title">خدمات الترجمة (العربية، الصومالية، الإنجليزية)</h4>
+                        <p class="text-muted mb-4" data-i18n="trans_card_desc">
+                            نوفر مترجمين محترفين في أوغندا للترجمة الفورية والتحريرية بين اللغة العربية، الصومالية، والإنجليزية للمستشفيات، السفارات، العقود، والاجتماعات.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="trans_card_title">
+                                <i class="bi bi-whatsapp me-2"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guided Uganda Tour Packages (No Prices) -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-subtitle" data-i18n="feat_tour_sub">السياحة والنقل والخدمات</span>
+                <h2 class="fw-bold text-emerald" data-i18n="srv_4_title">جولات سياحية مع مرشد</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tour 1 -->
+                <div class="col-md-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80" alt="Jinja and Source of the Nile Tour">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="text-emerald" data-i18n="tour_1_title">جولة يوم كامل إلى جينجا ومنبع النيل</h5>
+                            <p class="text-muted small mb-3" data-i18n="tour_1_desc">رحلة بالقارب إلى منبع نهر النيل، توقف في غابة مابيرا، شلالات سيزيبوا، ومرشد خاص.</p>
+                            <div class="mt-auto pt-3 border-top">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="tour_1_title">
+                                    <i class="bi bi-whatsapp me-1"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 2 -->
+                <div class="col-md-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="3-Day Murchison Falls Wildlife Safari">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="text-emerald" data-i18n="tour_2_title">سفاري الحياة البرية في شلالات مورشيسون (3 أيام)</h5>
+                            <p class="text-muted small mb-3" data-i18n="tour_2_desc">جولات مشاهدة الحيوانات الخمسة الكبرى، رحلة قارب في دلتا النيل، إقامة في منتجع وسيارة دفع رباعي.</p>
+                            <div class="mt-auto pt-3 border-top">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="tour_2_title">
+                                    <i class="bi bi-whatsapp me-1"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 3 -->
+                <div class="col-md-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=800&q=80" alt="Kampala Cultural and City Highlights Tour">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="text-emerald" data-i18n="tour_3_title">جولة معالم وثقافة مدينة كمبالا</h5>
+                            <p class="text-muted small mb-3" data-i18n="tour_3_desc">مسجد القذافي الوطني، مقابر كاسوبي، متحف أوغندا، وأسواق الحرف اليدوية مع مرشد خاص.</p>
+                            <div class="mt-auto pt-3 border-top">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="tour_3_title">
+                                    <i class="bi bi-whatsapp me-1"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 4 -->
+                <div class="col-md-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=800&q=80" alt="3-Day Bwindi Gorilla Trekking Experience">
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h5 class="text-emerald" data-i18n="tour_4_title">تجربة تتبع الغوريلا في غابة بويندي (3 أيام)</h5>
+                            <p class="text-muted small mb-3" data-i18n="tour_4_desc">تتبع الغوريلا الجبلية مع مرشدين مختصين في غابة بويندي، شامل النقل والإقامة الكاملة.</p>
+                            <div class="mt-auto pt-3 border-top">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" data-wa-item-key="tour_4_title">
+                                    <i class="bi bi-whatsapp me-1"></i> <span data-i18n="btn_inquire_wa">استفسر عبر واتساب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3" data-i18n="brand_name">عبدالله للسفريات والعقارات</h5>
+                    <p class="small" data-i18n="footer_about">
+                        عبدالله للسفريات والعقارات هي شركة وساطة رائدة في أوغندا متخصصة في تأجير وبيع المنازل، الاستقبال من مطار عنتيبي، الجولات السياحية، تخليص التأشيرات، والترجمة بين العربية والصومالية والإنجليزية.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-gold mb-3" data-i18n="footer_links_title">روابط سريعة</h6>
+                    <ul class="list-unstyled small d-grid gap-2">
+                        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                        <li><a href="real-estate.html" data-i18n="nav_real_estate">العقارات</a></li>
+                        <li><a href="tours-transfers.html" data-i18n="nav_tours">السياحة والمطار والخدمات</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-gold mb-3" data-i18n="footer_services_title">خدماتنا</h6>
+                    <ul class="list-unstyled small d-grid gap-2">
+                        <li><a href="tours-transfers.html" data-i18n="srv_1_title">الاستقبال من مطار عنتيبي</a></li>
+                        <li><a href="real-estate.html" data-i18n="srv_2_title">منازل وشقق للإيجار</a></li>
+                        <li><a href="real-estate.html" data-i18n="srv_3_title">منازل وعقارات للبيع</a></li>
+                        <li><a href="tours-transfers.html" data-i18n="srv_5_title">تخليص معاملات التأشيرات (الفيزا)</a></li>
+                        <li><a href="tours-transfers.html" data-i18n="srv_6_title">خدمات الترجمة (عربي / صومالي / إنجليزي)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="text-gold mb-3" data-i18n="footer_contact_title">تواصل معنا 24/7</h6>
+                    <p class="small mb-2"><i class="bi bi-geo-alt text-gold me-2"></i><span data-i18n="top_location">كمبالا وعنتيبي، أوغندا</span></p>
+                    <p class="small mb-3">
+                        <a href="https://wa.me/256740048986" target="_blank" rel="noopener noreferrer" class="wa-general-link" dir="ltr">
+                            <i class="bi bi-whatsapp text-success me-2"></i>+256 740 048 986
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom pt-3 text-center small">
+                <p class="mb-0" data-i18n="footer_rights">© 2026 عبدالله للسفريات والعقارات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/256740048986" target="_blank" rel="noopener noreferrer" class="floating-whatsapp wa-general-link" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

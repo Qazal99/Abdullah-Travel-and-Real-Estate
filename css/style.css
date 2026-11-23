@@ -1,0 +1,336 @@
+/* ==========================================================================
+   Abdullah Travel and Real Estate - Main Stylesheet
+   Theme: Luxury Emerald & Gold | Bilingual LTR (English) & RTL (Arabic)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-emerald: #0b3d2e;
+    --emerald-dark: #07291f;
+    --emerald-light: #145c46;
+    --accent-gold: #c89b3c;
+    --gold-hover: #b0852b;
+    --bg-cream: #f8f9fa;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --whatsapp-green: #25d366;
+    --whatsapp-dark: #1ebe5d;
+    --card-shadow: 0 10px 30px rgba(11, 61, 46, 0.08);
+    --card-hover-shadow: 0 18px 40px rgba(11, 61, 46, 0.15);
+}
+
+/* Base Typography & Language Switching */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-cream);
+    overflow-x: hidden;
+    line-height: 1.65;
+}
+
+html[dir="rtl"] body {
+    font-family: 'Cairo', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+    letter-spacing: 0;
+}
+
+/* Custom Utility Colors & Buttons */
+.bg-emerald {
+    background-color: var(--primary-emerald) !important;
+}
+
+.text-emerald {
+    color: var(--primary-emerald) !important;
+}
+
+.text-gold {
+    color: var(--accent-gold) !important;
+}
+
+.btn-gold {
+    background-color: var(--accent-gold);
+    border-color: var(--accent-gold);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    border-color: var(--gold-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-emerald {
+    background-color: var(--primary-emerald);
+    border-color: var(--primary-emerald);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-emerald:hover {
+    background-color: var(--emerald-dark);
+    border-color: var(--emerald-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp-green);
+    border-color: var(--whatsapp-green);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--whatsapp-dark);
+    border-color: var(--whatsapp-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Top Bar & Navigation */
+.top-bar {
+    background-color: var(--emerald-dark);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    padding: 0.45rem 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 0.85rem 0;
+}
+
+.navbar-brand img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-gold) !important;
+}
+
+.lang-toggle-btn {
+    border: 1.5px solid var(--primary-emerald);
+    color: var(--primary-emerald);
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 0.35rem 0.9rem;
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+.lang-toggle-btn:hover {
+    background-color: var(--primary-emerald);
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(7, 41, 31, 0.72), rgba(7, 41, 31, 0.78)),
+                url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color: #ffffff;
+    padding: 5rem 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: rgba(200, 155, 60, 0.2);
+    border: 1px solid var(--accent-gold);
+    color: #f3d078;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+/* Page Sub-Headers (Real Estate, Tours, Contact) */
+.page-header {
+    background: linear-gradient(rgba(7, 41, 31, 0.82), rgba(7, 41, 31, 0.85)),
+                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color: #ffffff;
+    padding: 4.5rem 0;
+}
+
+/* Cards (Services, Properties, Tours) */
+.custom-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.custom-card:hover .card-img-wrapper img {
+    transform: scale(1.06);
+}
+
+.property-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--primary-emerald);
+    color: #ffffff;
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.property-badge.sale {
+    background-color: var(--accent-gold);
+}
+
+html[dir="rtl"] .property-badge {
+    left: auto;
+    right: 15px;
+}
+
+.price-tag {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-emerald);
+}
+
+.service-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background-color: rgba(11, 61, 46, 0.08);
+    color: var(--primary-emerald);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.custom-card:hover .service-icon-box {
+    background-color: var(--primary-emerald);
+    color: var(--accent-gold);
+}
+
+/* Section Headings */
+.section-subtitle {
+    color: var(--accent-gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+html[dir="rtl"] .section-subtitle {
+    letter-spacing: 0;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--whatsapp-green);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+    z-index: 1050;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    background-color: var(--whatsapp-dark);
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+html[dir="rtl"] .floating-whatsapp {
+    right: auto;
+    left: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--emerald-dark);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--accent-gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
